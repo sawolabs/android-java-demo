@@ -1,4 +1,4 @@
-package com.example.sample_app;
+package com.sawolabs.javasampleapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
