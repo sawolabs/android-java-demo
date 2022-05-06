@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.sawolabs.androidsdk.ConstantsKt;
+import com.sawolabs.androidsdk.util.Constants;
+
 
 public class CallbackActivity extends AppCompatActivity {
 
@@ -17,7 +18,7 @@ public class CallbackActivity extends AppCompatActivity {
         setContentView(R.layout.activity_callback);
         Toast.makeText(this,"Logged in successfully",Toast.LENGTH_SHORT).show();
         Intent intent = getIntent();
-        String message = intent.getStringExtra(ConstantsKt.LOGIN_SUCCESS_MESSAGE);
+        String message = intent.getStringExtra(Constants.LOGIN_SUCCESS_MESSAGE);
         Log.i("payload:",message);
     }
 }
